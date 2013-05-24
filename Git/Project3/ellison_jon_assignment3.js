@@ -53,7 +53,24 @@ console.log("The player is " + playerInfo.players[0].playerFirstName);
 var Bill
 var Bob
 var Bruce
-var alldogs = [ "Bill", "Bob", "Bruce", ];
+var alldogs = [ "Bill", "Bob", "Bruce", ]
 var numofSpots = [1,2]
-var walkedIntoBuilding = function(floor1,floor2){
+var walkedIntoBuilding = true
+var wenttofloor1 = 1
+var wenttofloor2 = 1
+
+	var dogwalk = (function (walk, didnotwalk) {
+		// body...
+		if (walk > didnotwalk){
+			console.log( "" + alldogs + " went for a walk. ");
+			dogwalk = true;
+
+		} else {
+			console.log( "" +alldogs + " they didn't go for walk. ");
+			dogwalk = false;
+	}
+			return dogwalk;
+});
+
+dogwalk(1,0);
 
