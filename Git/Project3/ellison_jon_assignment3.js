@@ -6,15 +6,54 @@
 //23May13
 //Objects
 
+var playerInfo = {
+
+	"players":[
+		{"playerFirstName": "Lee", 
+		 "playerLastName": "Lewis"
+	},
+		{"playerFirstName": "Jon",
+	 	 "playerLastName":  "Ellison"
+
+		}
+	]
+};
+
 
 var cube = {
 
-	"name": "Rubik"
+	"name": "Rubik",
 	"length": 5,
 	"width": 5,
 	"height": 5,
-	"isSquare": true
+	"isSquare": true,
+	"area": function(){ // Method: accessor - Method: Getter
+
+		var totalArea = this.height * this.width * this.length;
+		return totalArea;
+	},
+	"setHeight": function(newHeight){
+
+		this.height - newHeight;
+
+	}
 
 }; // end cube object
 
-console.log( " The lengthof the cube is " + cube.length);
+console.log("The total area is " +cube.area());
+
+cube.setHeight(10);
+
+console.log("The new area is " +cube.area());
+
+console.log("The player is " + playerInfo.players[0].playerFirstName);
+
+
+//global variables
+var Bill
+var Bob
+var Bruce
+var alldogs = [ "Bill", "Bob", "Bruce", ];
+var numofSpots = [1,2]
+var walkedIntoBuilding = function(floor1,floor2){
+
