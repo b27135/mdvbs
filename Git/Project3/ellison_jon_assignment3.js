@@ -59,18 +59,29 @@ var walkedIntoBuilding = true
 var wenttofloor1 = 1
 var wenttofloor2 = 1
 
-	var dogwalk = (function (walk, didnotwalk) {
-		// body...
-		if (walk > didnotwalk){
-			console.log( "" + alldogs + " went for a walk. ");
-			dogwalk = true;
+//Boolean Conditional
 
-		} else {
-			console.log( "" +alldogs + " they didn't go for walk. ");
-			dogwalk = false;
-	}
-			return dogwalk;
-});
+		var dogwalk = (function (walk, didnotwalk) {
+			// body...
+			if (walk > didnotwalk){
+				console.log( "" + alldogs + " went for a walk. ");
+				dogwalk = true;
+
+			} else {
+				console.log( "" +alldogs + " they didn't go for walk. ");
+				dogwalk = false;
+		}
+				return dogwalk;
+	});
+
+
+//nested loop
+		for (var i=0; i<2; i++) i[2] {
+  		 console.log(" If " +alldogs + "have" + i + "<br>";
+  		}
+
+
 
 dogwalk(1,0);
+
 
