@@ -6,82 +6,58 @@
 //23May13
 //Objects
 
-var playerInfo = {
-
-	"players":[
-		{"playerFirstName": "Lee", 
-		 "playerLastName": "Lewis"
-	},
-		{"playerFirstName": "Jon",
-	 	 "playerLastName":  "Ellison"
-
-		}
-	]
-};
-
-
-var cube = {
-
-	"name": "Rubik",
-	"length": 5,
-	"width": 5,
-	"height": 5,
-	"isSquare": true,
-	"area": function(){ // Method: accessor - Method: Getter
-
-		var totalArea = this.height * this.width * this.length;
-		return totalArea;
-	},
-	"setHeight": function(newHeight){
-
-		this.height - newHeight;
-
-	}
-
-}; // end cube object
-
-console.log("The total area is " +cube.area());
-
-cube.setHeight(10);
-
-console.log("The new area is " +cube.area());
-
-console.log("The player is " + playerInfo.players[0].playerFirstName);
-
-
-//global variables
+//This section is for my variables
 var Bill
 var Bob
 var Bruce
 var alldogs = [ "Bill", "Bob", "Bruce", ]
-var numofSpots = [1,2]
-var walkedIntoBuilding = true
-var wenttofloor1 = 1
-var wenttofloor2 = 1
 
-//Boolean Conditional
+// This section is for the objects and properties that I will need to tell my story
 
-		var dogwalk = (function (walk, didnotwalk) {
+
+//This boolean conditional is going to determine if the dogs actually go for a walk
+
+
+		var dogwalk = (function (walk, didnotwalk) { // <--This line is my boolean argument for my flowchart
 			// body...
 			if (walk > didnotwalk){
-				console.log( "" + alldogs + " went for a walk. ");
+				console.log( " The dogs named " + alldogs + " went for a walk. ");
 				dogwalk = true;
 
 			} else {
-				console.log( "" +alldogs + " they didn't go for walk. ");
+				console.log( " The dogs named " +alldogs + " they didn't go for walk. ");
 				dogwalk = false;
 		}
-				return dogwalk;
+				return dogwalk; // This is the return boolean for my flowchart
 	});
 
+//Dog Info / Objects and Properties
+		var dogInfo = {
 
-//nested loop
-		for (var i=0; i<2; i++) i[2] {
-  		 console.log(" If " +alldogs + "have" + i + "<br>";
-  		}
+			"dogs":[
+				{"dogname": "bob", 
+				 "numofspots": "2",
+			},
+				{"dogname": "Bill",
+	 	 		 "numofspots":  "3",
+			},
+				{"dogname": "Bruce",
+				 "numofspots": "4",
+			},
+		]
+	};
 
 
 
+
+// This section is for calling my functions, syntax and logging my story
 dogwalk(1,0);
+
+console.log(" The dog named " + dogInfo.dogs[0].dogname + " has " + dogInfo.dogs[0].numofspots + " spots ");
+
+console.log(" The dog named " + dogInfo.dogs[1].dogname + " has " + dogInfo.dogs[1].numofspots + "spots");
+
+console.log(" The dog named " + dogInfo.dogs[2].dogname + " has " + dogInfo.dogs[2].numofspots + "spots");
+
 
 
